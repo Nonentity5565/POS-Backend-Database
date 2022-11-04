@@ -1,0 +1,40 @@
+[
+	{
+		"method": "POST",
+		"url": "localhost:3000/api/foods",
+		"body": {
+			"categoryId": "XXXXXXXXXXXXX",
+			"foodItem": {
+				"foodName": "Steak",
+				"price": 25.0
+			}
+		}
+	},
+	{
+		"method": "GET",
+		"url": "localhost:3000/api/foods",
+		"body": {
+			"categoryId": "XXXXXXXXXXXXX"
+		}
+	},
+	{
+		"method": "PUT",
+		"url": "localhost:3000/api/foods",
+		"body": {
+			"categoryId": "XXXXXXXXXXXXX",
+			"foodItem": {
+				"foodId": "XXXXXXXXXXXX",
+				"foodName": "Steak",
+				"price": 25.0
+			}
+		}
+	},
+	{
+		"method": "DELETE",
+		"url": "localhost:3000/api/foods",
+		"body": {
+			"categoryId": "XXXXXXXXXXXXX",
+			"foodId": "XXXXXXXXXXXX"
+		}
+	}
+]

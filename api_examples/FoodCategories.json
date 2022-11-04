@@ -1,0 +1,28 @@
+[
+	{
+		"method" : "POST",
+		"url": "localhost:3000/api/foodCategories",
+		"body":{
+			"categoryName": "Dessert"
+		}
+	},
+    {
+		"method" : "GET",
+		"url": "localhost:3000/api/foodCategories"
+	},
+    {
+		"method" : "PUT",
+		"url": "localhost:3000/api/foodCategories",
+		"body":{
+			"categoryId": "XXXXXXXXXXXXX",
+			"categoryName": "Dessert"
+		}
+	},
+    {
+		"method" : "DELETE",
+		"url": "localhost:3000/api/foodCategories",
+		"body":{
+			"categoryId": "XXXXXXXXXXXXX"
+		}
+	}
+]

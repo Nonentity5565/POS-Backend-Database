@@ -1,0 +1,32 @@
+[
+	{
+		"method": "POST",
+		"url": "localhost:3000/api/orders",
+		"body": {
+			"tableId": "XXXXXXXXXXXXX",
+			"orders": [
+				{
+					"foodName": "Steak",
+					"price": 20,
+					"qty": 1
+				},
+				{
+					"foodName": "Fish n Chips",
+					"price": 15,
+					"qty": 2
+				}
+			]
+		}
+	},
+
+	{
+		"method": "DELETE",
+		"url": "localhost:3000/api/orders",
+		"body": {
+			"tableId": "XXXXXXXXXXXXX",
+			"orderId": "XXXXXXXXXXXX",
+			"foodname": "Steak",
+			"qty": 1
+		}
+	}
+]

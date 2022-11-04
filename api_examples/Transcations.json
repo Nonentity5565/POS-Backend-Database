@@ -1,0 +1,26 @@
+[
+	{
+		"method" : "POST",
+		"url": "localhost:3000/api/transactions",
+		"body":{
+			"total": 17.0,
+			"order":[
+				{
+					"foodName": "burger",
+					"qty": 1,
+					"price": 5.0
+				},
+				{
+					"foodName": "fish n chips",
+					"qty": 1,
+					"price": 12.0
+				}
+			]
+		}
+	},
+	
+	{
+		"method" : "GET",
+		"url": "localhost:3000/api/transactions"
+	}
+]

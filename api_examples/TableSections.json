@@ -1,0 +1,28 @@
+[
+	{
+		"method": "POST",
+		"url": "localhost:3000/api/tableSections",
+		"body": {
+			"sectionName": "VIP"
+		}
+	},
+	{
+		"method": "Get",
+		"url": "localhost:3000/api/tableSections"
+	},
+	{
+		"method": "PUT",
+		"url": "localhost:3000/api/tableSections",
+		"body": {
+			"sectionId": "XXXXXXXXXXXXX",
+			"sectionName": "VIP2"
+		}
+	},
+	{
+		"method": "DELETE",
+		"url": "localhost:3000/api/tableSections",
+		"body": {
+			"sectionId": "XXXXXXXXXXXX"
+		}
+	}
+]
