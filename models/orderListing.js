@@ -8,7 +8,8 @@ const orderItemSchema = mongoose.Schema({
 
 const orderListingSchema = new mongoose.Schema(
 	{
-		tableName: { type: String, required: true },
+		orderNumber: { type: Number, required: true },
+		having: { type: String, required: true},
 		time: { type: Date, default: Date.now },
 		orders: { type: [orderItemSchema], required: true },
 	},

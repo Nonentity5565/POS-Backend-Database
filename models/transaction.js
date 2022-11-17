@@ -9,7 +9,10 @@ const orderObj = new mongoose.Schema({
 
 const transactionSchema = new mongoose.Schema(
 	{
+		orderNumber: { type: Number, required: true },
 		date: { type: Date, default: Date.now },
+		having: { type: String, required: true },
+		paidBy: { type: String, required: true },
 		total: { type: Number, required: true },
 		order: [orderObj],
 	},

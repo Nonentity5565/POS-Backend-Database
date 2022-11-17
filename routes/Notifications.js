@@ -25,21 +25,21 @@ router.get('/', async (req, res) => {
 		return;
 	}
 
-	// console.log(`Deleting sent data`);
-	// const idList = queryResult.map((order) => order._id);
+	console.log(`Deleting sent data`);
+	const idList = queryResult.map((order) => order._id);
 
-	// const deleteResult = await NotificationModel.deleteMany({
-	// 	_id: { $in: idList },
-	// }).catch((err) => {
-	// 	console.log('Delete failed');
-	// 	res.status(500).json({ error: err });
-	// });
+	const deleteResult = await NotificationModel.deleteMany({
+		_id: { $in: idList },
+	}).catch((err) => {
+		console.log('Delete failed');
+		res.status(500).json({ error: err });
+	});
 
-	// if (deleteResult.deletedCount !== queryResult.length) {
-	// 	console.log('Delete number mismatched');
-	// } else {
-	// 	console.log('Deleted successfully');
-	// }
+	if (deleteResult.deletedCount !== queryResult.length) {
+		console.log('Delete number mismatched');
+	} else {
+		console.log('Deleted successfully');
+	}
 });
 
 module.exports = router;

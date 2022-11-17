@@ -1,0 +1,6 @@
+- Complete billing
+-- Send billing info to transactions
+-- clear table orders
+
+- Delete food from order
+

@@ -20,6 +20,11 @@ router.post('/', async (req, res) => {
 		return;
 	}
 
+	if (body.foodItem == null) {
+		console.log('No Food Item');
+		res.status(500).json({ error: 'Food Item not found' });
+		return;
+	}
 	console.log(`category found: ${category}`);
 	category.items.push(body.foodItem);
 
@@ -35,12 +40,12 @@ router.post('/', async (req, res) => {
 });
 
 // -- Get foodItem
-router.get('/', async (req, res) => {
+router.get('/:categoryId', async (req, res) => {
 	console.log(`Food ${req.method} request called`);
 	const body = req.body;
 
 	const queryResult = await FoodCategoryModel.find(
-		{ _id: body.categoryId },
+		{ _id: req.params.categoryId },
 		{ _id: 0, items: 1 }
 	).catch((err) => {
 		console.log('Query failed');

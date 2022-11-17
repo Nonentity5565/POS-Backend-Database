@@ -3,7 +3,10 @@
 		"method": "POST",
 		"url": "localhost:3000/api/orders",
 		"body": {
-			"tableId": "XXXXXXXXXXXXX",
+			"orderNumber": 544,
+			"total": 220.0,
+			"having": "Dine-in",
+			"paidBy":"Cash",
 			"orders": [
 				{
 					"foodName": "Steak",
@@ -16,17 +19,6 @@
 					"qty": 2
 				}
 			]
-		}
-	},
-
-	{
-		"method": "DELETE",
-		"url": "localhost:3000/api/orders",
-		"body": {
-			"tableId": "XXXXXXXXXXXXX",
-			"orderId": "XXXXXXXXXXXX",
-			"foodname": "Steak",
-			"qty": 1
 		}
 	}
 ]

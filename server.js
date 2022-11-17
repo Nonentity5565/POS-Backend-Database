@@ -6,8 +6,6 @@ const PORT = 3000;
 // Routes
 const foodCategoriesRoute = require('./routes/FoodCategories');
 const foodRoute = require('./routes/Foods');
-const tableRoute = require('./routes/Tables');
-const tableSectionsRoute = require('./routes/TableSections');
 const transactionsRoute = require('./routes/Transactions');
 const ordersRoute = require('./routes/Orders');
 const orderListingRoute = require('./routes/OrderListings');
@@ -21,8 +19,6 @@ app.use(bodyParser.json());
 
 app.use('/api/foodCategories', foodCategoriesRoute);
 app.use('/api/foods', foodRoute);
-app.use('/api/tableSections', tableSectionsRoute);
-app.use('/api/tables', tableRoute);
 app.use('/api/transactions', transactionsRoute);
 app.use('/api/orders', ordersRoute);
 app.use('/api/orderListings', orderListingRoute);
